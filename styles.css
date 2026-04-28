@@ -133,6 +133,94 @@ body {
     background-color: #1B4526;
 }
 
+.contact-container {
+    display: flex;
+    align-items: start;
+    padding-left: 6.7rem;
+    padding-bottom: 8.5rem;
+    gap: 136px;
+}
+
+.contact-left {
+    margin-top: -4rem;
+}
+
+.contact-left h3 {
+    margin-bottom: 1.8rem;
+}
+
+.address {
+    margin-bottom: 3.9rem;
+}
+
+.contact-left li {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 3.5rem;
+}
+
+.contact-middle {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.8rem;
+}
+
+.contact img {
+    border-radius: 6px;
+}
+
+.contact-right h4 {
+    font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: #3B2F2F;
+  width: 419px;
+  margin-bottom: 4.5rem;
+}
+.contact-right {
+    margin-top: 1.7rem;
+}
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="submit"] {
+  background-color: #4A5D4F;
+  color: #FFFAF2;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  display: block;
+  width: 422px;
+  border-radius: 6px;
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+  color: #7b7b7b;
+  padding-left: 1rem;
+}
+
+input[type="text"] {
+  background-color: #f5f5f5;
+  width: 422px;
+  border-radius: 6px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+input {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
 .exhibition {
     background-image: url(images/exhibition-background.jpg);
     background-repeat: no-repeat;
@@ -193,52 +281,21 @@ body {
 
 .workshops-img {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     justify-content: flex-end;
-    gap: 45px 35px;
+    gap: 35px;
 }
-
-/*
-.workshops {
-    background-image: url(images/workshop-background.jpg);
-    display: flex;
-    align-items: flex-start;
-    padding: 67px 66px;
-}
-.workshops-text {
-    flex: 1;
-}
-.workshops-text h2 {
-    font-family: "Playfair Display", serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 7.2rem;
-  line-height: 8.6rem;
-  color: #3B2F2F;
-  margin-bottom: 2.5rem;
-}
-.workshops-text p {
-    margin-bottom: 3.5rem;
-}
-.workshops-img {
+.row-top {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 45px;
-    margin-top: 34.6rem;
-    align-content: start;
+    margin-left: 51.2rem;
 }
-.workshops-img img {
-    width: 375px;
-    display: block;
-    border-radius: 4px;
+.row-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 45px;
 }
-.workshops-img img:nth-child(1) {
-    grid-column: 2;
-}
-.workshops-img img:nth-child(2) {
-    grid-column: 3;
-}
-*/
 
 .hero h1{
     font-family: "Playfair Display", serif;
@@ -325,6 +382,28 @@ header {
     letter-spacing: 10%;
 }
 
+.cta {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 97px 82px 97px 67px;
+}
+.cta-left a {
+    padding-left: 6.7rem;
+}
+
+.cta-middle ul {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 25px 75px;
+}
+.cta-middle a {
+    color: #FFFAF2
+}
+.cta-right ul {
+    display: flex;
+    gap: 45px;
+}
 
 footer p {
     font-family: "Inter", sans-serif;
@@ -336,6 +415,8 @@ footer p {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 footer {
@@ -355,6 +436,7 @@ nav {
     width: 1276px;
     margin-left: auto;
     margin-right: auto;
+   
 }
 
 nav ul {
@@ -420,6 +502,10 @@ strong {
 .schedule-right ul li p {
     line-height: 4.5rem;
 }
+.schedule img {
+    border-radius: 4px;
+}
+
 
 .reserve {
     position: relative;
@@ -445,14 +531,17 @@ strong {
     align-items: center;
     gap: 2.5rem;
 }
+.reserve-btn .btn-light-green {
+    width: 160px;
+}
 
 .img-left {
     position: absolute;
-    bottom: 0;
+    bottom: 70px;
     left: 0;
 }
 .img-right {
     position: absolute;
-    top: 0;
+    top: -105px;
     right: 0;
 }
